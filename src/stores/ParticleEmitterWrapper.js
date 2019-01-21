@@ -23,7 +23,6 @@ const cssStringToArray = str => {
 const ParticleEmitterWrapperModel = types.model('ParticleEmitterWrapper', {
   particleEmitterInstance: types.frozen(),
   includeMediaQueryRules: false,
-  responsiveAvailableText: '/*** Responsive variations available ***/\n\n',
 })
   .views(self => ({
     get json() {
@@ -34,6 +33,9 @@ const ParticleEmitterWrapperModel = types.model('ParticleEmitterWrapper', {
     },
   }))
   .views(self => ({
+    get responsiveAvailableText() {
+      return '/*** Responsive variations available (' + Array.from(this.json.mediaQueries.values()).map(([ key ]) => key).join(', ') + ') ***/\n\n';
+    },
     get cssArray() {
       return self.css.split('\n');
     },

@@ -70,7 +70,7 @@ class App extends Component {
             </div>
           </div>
           <div className="dib pa2 fr">
-            <a className="white no-underline" href="https://github.com/hamzakubba/particle-emitter-documentor/">Source</a>
+            <a className="white no-underline" href="https://github.com/hamzakubba/particle-emitter-viewer/">Source</a>
           </div>
         </div>
         <div className="overflow-auto">
@@ -112,7 +112,7 @@ class App extends Component {
                   <div className="pl4 b f2 pv4 b--black bt pointer" onClick={ () => onClickGroup() }>
                     { ruleName } ({ ruleCount })
                     <div className="dib w2 h2 ml3 relative">
-                      <div style={{ transition: 'transform .2s' }} className={ 'absolute top-0 left-0 ' + (isCollapsed ? '' : 'rotate-90 pl1') }>⮞</div>
+                      <div style={{ transition: 'transform .2s' }} className={ 'absolute top-0 left-0 ' + (isCollapsed ? '' : 'rotate-90') }>▶</div>
                     </div>
                   </div>
                   {
@@ -125,7 +125,7 @@ class App extends Component {
                             theClass
                               ? (
                                 <div className="flex mb2 hover-bg-washed-green" key={ ruleName+hgIndex }>
-                                  <div className={ 'pa1 pl6 w-20' }>
+                                  <div className={ 'pa1 pl6 w-20 ' } style={{ minWidth: '24rem' }}>
                                     <code className="pa1" dangerouslySetInnerHTML={{ __html: format((theClass || ''), searchFilter) }} />
                                   </div>
                                   <div className={ 'pa1 w-80' }>
