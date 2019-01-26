@@ -1,6 +1,6 @@
 {
   "name": "particle-emitter-viewer",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "homepage": "https://github.com/hamzakubba/particle-emitter",
   "dependencies": {
@@ -10,7 +10,7 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-scripts": "2.1.1",
-    "particle-emitter": "^0.3.2"
+    "particle-emitter": "^0.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
