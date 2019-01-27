@@ -2,7 +2,7 @@ import { types } from 'mobx-state-tree';
 
 import ParticleEmitter from 'particle-emitter';
 
-import tachyonsConfig from 'particle-emitter/build/tachyons-config';
+import tachyonsConfig from 'particle-emitter/build/examples/tachyons/config';
 
 const cssStringToArray = str => {
   const result = [];

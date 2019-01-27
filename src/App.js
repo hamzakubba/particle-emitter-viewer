@@ -17,7 +17,7 @@ class App extends Component {
 
     this.state = {
       searchFilter: '',
-      collapsedRules: ['normalize', 'box-sizing', 'images', 'code'],
+      collapsedRules: ['Normalize.css', 'Border box box-sizing', 'Keep images inside parent', 'Aspect ratios', 'Code', 'Hover+focus skins / text colors', 'Hover+focus background colors', 'Tables'],
       // showMatchesMode: 'withContext', // 'onlyMatches', 'complete'
     };
   }
@@ -77,7 +77,7 @@ class App extends Component {
           <div className="pl4 pv3 f6">
             CSS below is a close approximation of
             { ' ' }
-            <a className="green no-underline" href="http://tachyons.io/">Tachyons v4.10.0</a>
+            <a className="green no-underline" href="http://tachyons.io/">Tachyons v4.11.2</a>
             { ' ' }
             CSS, generated using
             { ' ' }
